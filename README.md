@@ -1,0 +1,1 @@
+Atravez do movimentos de imagens sobrepostas em tempos diferentes podemos criar um efeito 3D

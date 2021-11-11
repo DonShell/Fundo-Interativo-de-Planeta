@@ -1,0 +1,55 @@
+.borda
+{
+	border-color:#000000;
+	border-style:solid;
+}
+#info
+{
+	position: fixed;
+	color:#ffffff;
+}
+body
+{
+	background:#000000;
+}
+
+
+#camada1
+{
+	position: fixed;
+	background-image: url('img/estrelas2.png');
+	width: 3000px;
+	height: 2000px;
+	left: -25%;
+	top: -25%
+}
+
+#camada2
+{
+	position: fixed;
+	background-image: url('img/estrelas.png');
+	width: 200%;
+	height: 200%;
+	left: -50%;
+	top: -50%
+}
+#camada3
+{
+	position: fixed;
+	background-image: url('img/estrelas3.png');
+	width: 200%;
+	height: 200%;
+	left: -50%;
+	top: -50%
+}
+#camada4
+{
+	position: fixed;
+	background-image: url('img/planeta.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: 120%;
+	width: 120%;
+	left: -10%;
+	top: 10%;
+}

@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<meta charset="urf-8">
+		
+		<link rel="stylesheet" href="style.css">
+		<title>
+		
+		</title>
+		<script>
+		
+		</script>
+	</head>
+	<body>
+		<!--h5 id="info">
+		
+		</h5!-->
+		
+		<div id='camada1'>
+		</div>
+		<div id='camada2'>
+		</div>
+		<div id='camada3'>
+		</div>
+		<div id='camada4'>
+		</div>
+		
+		
+		
+		<!--script src="../jquery-3.2.1.js"></script!-->
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+		<script type="text/javascript">
+			function valx()
+			{
+				var x = event.clientX;
+				var x = x - 5;	
+				return (x);
+			}
+			function valy()
+			{
+				var y = event.clientY;
+				var y = y - 5;	
+				return (y);
+			}
+			
+			$("body").mousemove(function(){
+				XX = $("body").width() / 2;
+				YY = $("body").height() / 2 ;
+				X = valx() - XX;
+				Y = valy() - YY;
+				$("#info").html( "X:" + X + "<br>Y: " + Y);
+				$("#camada2").animate({
+					marginLeft:  (-1 * X) + "px",
+					marginTop: (-1 * Y) + "px"
+				},0);
+				X = X / 2;
+				Y = Y / 2;
+				$("#camada1").animate({
+					marginLeft:  (-1 * X) + "px",
+					marginTop: (-1 * Y) + "px"
+				},0);
+				X = X / 2;
+				Y = Y / 2;
+				$("#camada3").animate({
+					marginLeft:  (-1 * X) + "px",
+					marginTop: (-1 * Y) + "px"
+				},0);
+				X = X / 2;
+				Y = Y / 1.7;
+				$("#camada4").animate({
+					marginLeft:  (-1 * X) + "px",
+					marginTop: (-1 * Y * 2) + "px"
+				},0);
+				
+			});
+			
+			
+		</script>
+	</body>
+</html>
